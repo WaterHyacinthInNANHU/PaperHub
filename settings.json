@@ -1,9 +1,9 @@
 {
-  "conferences": [
+  "publishers": [
     "sigcomm", "mobicom", "nsdi", "sensys", "mobisys", "imwut" , "ipsn", "infocom", "mobihoc"
   ],
   "number_per_search": 100,
-  "number_per_conference": 100,
+  "number_per_publisher": 100,
   "entry_style": {
     "style": "rainbow",
     "line_height": 30,

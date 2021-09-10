@@ -5,8 +5,8 @@ import webbrowser
 from config import settings
 
 # load parameters
-CONFERENCES = settings['conferences']
-NUMBER_PER_CONFERENCE = int(settings['number_per_conference'])
+PUBLISHERS = settings['publishers']
+NUMBER_PER_PUBLISHER = int(settings['number_per_publisher'])
 NUMBER_PER_SEARCH = int(settings['number_per_search'])
 
 # init output file
@@ -20,9 +20,9 @@ target = "file:///{}".format(SAVE_FULL_PATH)
 while True:
     terms = input("Search for: ")
     while True:
-        mode = input("Search by conferences? [y/n]:")
+        mode = input("Search by publishers? [y/n]:")
         if mode == 'y':
-            info = db.search_by_conference(terms, CONFERENCES, NUMBER_PER_CONFERENCE)
+            info = db.search_by_conference(terms, PUBLISHERS, NUMBER_PER_PUBLISHER)
             break
         elif mode == 'n':
             info = db.search(terms, NUMBER_PER_SEARCH)
