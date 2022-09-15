@@ -1,6 +1,6 @@
 {
   "publishers": [
-    "sigcomm", "mobicom", "nsdi", "sensys", "mobisys", "imwut" , "ipsn", "infocom", "mobihoc"
+    "sigcomm", "mobicom", "nsdi", "sensys", "mobisys", "imwut" , "ubicomp", "ipsn", "infocom", "mobihoc", "sysml", "hotedgevideo", "MM", "VR"
   ],
   "number_per_search": 100,
   "number_per_publisher": 100,

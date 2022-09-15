@@ -37,6 +37,18 @@ def get_xml(terms, number, batch_size=100):
             xml += [fetch(url)]
     return xml
 
+# def get_xml(terms, number):
+#     """
+#     :param terms: string of searched terms
+#     :param number: number of results
+#     :param batch_size: number of results extracted from dblp each time
+#     :return: a list of xml strings
+#     """
+#     xml = []
+#     url = 'https://dblp.org/search/publ/api?q=' + str(terms) + '&h=' + str(number)
+#     xml += [fetch(url)]
+#     return xml
+
 
 def get_attribute(info):
     """
